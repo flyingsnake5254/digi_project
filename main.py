@@ -150,23 +150,25 @@ def page_pm25():
         led_line.set_pixel(i, pm25_color_dark[i], pm25_bright_dark[i])
     led_line.show()
     # wifi
-    SSID = 'Pixel_6123'
-    PASSWORD = '99999999'
+    SSID = 'Wifi Name'
+    PASSWORD = 'Wifi Password'
      
     wlan = network.WLAN(network.STA_IF)
     wlan.active(True)
     wlan.connect(SSID, PASSWORD)
 
-    dots = 2
+    dots = 10
     lcd.clear()
     lcd.move_to(0,0)
-    lcd.putstr('wairing to connect'+'.'*dots)
+    lcd.putstr('Waiting for')
+    lcd.move_to(0,1)
+    lcd.putstr('connection'+'.')
     while not (wlan.isconnected() or wlan.status() == network.STAT_GOT_IP):
-        if dots == 5:
-            lcd.move_to(2,1)
+        if dots == 13:
+            lcd.move_to(10,1)
             lcd.putstr('   ')
-            lcd.move_to(2,1)
-            dots = 2
+            lcd.move_to(10,1)
+            dots = 10
         lcd.move_to(dots,1)
         lcd.putstr('.')
         dots += 1
@@ -484,6 +486,7 @@ page_home()
             
             
         
+
 
 
 
