@@ -14,7 +14,6 @@
 
 (http://youtu.be/CFm9zBJCCvM "專案成果影片")
 
-> 點擊圖片會連結到 YouTube 影片。
 
 ## 配線圖
 
