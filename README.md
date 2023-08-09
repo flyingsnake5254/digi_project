@@ -12,7 +12,7 @@
 
 功能展示影片：
 
-[![專案介紹影片](http://youtu.be/CFm9zBJCCvM/0.jpg)](http://youtu.be/CFm9zBJCCvM "專案介紹影片")
+(http://youtu.be/CFm9zBJCCvM "專案成果影片")
 
 > 點擊圖片會連結到 YouTube 影片。
 
